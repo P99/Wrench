@@ -452,7 +452,7 @@ abstract class Protocol
         }
 
         if (empty($headers[self::HEADER_ORIGIN])) {
-            throw new BadRequestException('No origin header');
+            //throw new BadRequestException('No origin header');
         } else {
             unset($extraHeaders[self::HEADER_ORIGIN]);
         }
